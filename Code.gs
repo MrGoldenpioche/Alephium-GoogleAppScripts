@@ -1,11 +1,11 @@
-var BASE_URL = "https://mainnet-backend.alephium.org/addresses/";
+const BASE_URL = "https://mainnet-backend.alephium.org/addresses/";
 
-//Enter your wallet address here
-var WALLET_ADDRESS = "1DxSgjSjsweEoyiykwnWARhws9f26TZLfGXRevLx44NXw";
+//Enter your Alephium' wallet address here
+var wallet_address = "14kXEBykCLgMQr7PV94v4ygtHuPRmFtMvyc42DcDjA5Cu";
 
 function ALPH_makeHttpRequest() {
 
-  var response = UrlFetchApp.fetch(BASE_URL + WALLET_ADDRESS);
+  var response = UrlFetchApp.fetch(BASE_URL + wallet_address);
   Logger.log(response.getContentText());
 
   return response;
@@ -14,19 +14,19 @@ function ALPH_makeHttpRequest() {
 function ALPH_getTotalAlph() {
 
   var response = ALPH_makeHttpRequest();
+  var total_alph = parseInt(JSON.parse(response.getContentText()).balance,10);
 
-  var TOTAL_ALPH = response.getContentText().split(":")[1].split(",")[0].replace(/"/g, "");
-  Logger.log(TOTAL_ALPH);
+  Logger.log(total_alph);
 
-  return TOTAL_ALPH;
+  return total_alph/Math.pow(10, 18);
 }
 
 function ALPH_getTotalTransaction() {
 
   var response = ALPH_makeHttpRequest();
-  var TOTAL_TX = response.getContentText().split(":")[2].split(",")[0].replace(/}/g, "");
+  var total_tx = parseInt(JSON.parse(response.getContentText()).txNumber,10);
 
-  Logger.log(TOTAL_TX);
+  Logger.log(total_tx);
 
-  return TOTAL_TX;
+  return total_tx;
 }
