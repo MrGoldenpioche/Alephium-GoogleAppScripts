@@ -5,6 +5,7 @@ This repository contains basic Google AppScripts that can be used in your Google
 ### Constant variables
 To use these functions, two variables are set.
 > - BASE_URL : fixed to "https://mainnet-backend.alephium.org/addresses/"
+> - ALPH_UNIT : fixed to 10^18
 > - wallet_address : add your Alephium's wallet address here
 
 If you don't want details, jump to <a href="https://github.com/MrGoldenpioche/Alephium-GoogleAppScripts#how-to-use-them">How to use this ?</a>
@@ -19,16 +20,22 @@ This function first call **ALPH_makeHttpRequest()** and return the total number 
 
 <center><img src="./ressources/totalAlph.png" ></center>
 
+### ALPH_getTotalAlph2(wallet array)
+Not available for the moment.
+Must be implemented.
+
 ### ALPH_getTotalTransaction()
 This function first call **ALPH_makeHttpRequest()** and return the total number of transaction for the specified wallet.
 
 <center><img src="./ressources/totalTX.png" ></center>
 
 ### ALPH_getCurrentTokenPrice()
-Not available for the moment. Waiting on listing on Exchange
+Not available for the moment. 
+Waiting on listing on Exchange.
 
 ### ALPH_getTotalCirculatingSupply()
-Not available for the moment. Must be implemented
+Not available for the moment. 
+Must be implemented.
 
 ## How to use ?
 Go to https://script.google.com/ and create a new project named **Alephium**. 
