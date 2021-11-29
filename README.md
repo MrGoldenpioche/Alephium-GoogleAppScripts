@@ -27,6 +27,9 @@ This function first call **ALPH_makeHttpRequest()** and return the total number 
 ### ALPH_getCurrentTokenPrice()
 Not available for the moment. Waiting on listing on Exchange
 
+### ALPH_getTotalCirculatingSupply()
+Not available for the moment. Must be implemented
+
 ## How to use ?
 Go to https://script.google.com/ and create a new project named **Alephium**. 
 This will automatically create a file named **code.gs**. Open it and past the functions you want in it.
@@ -48,4 +51,7 @@ Don't forget to update the variable **wallet_address** and then run the desired 
 
 ### Step 4 - Save project and call functions into GoogleSheet
 Look examples above. 
+
+## References
+> - <a href="https://mainnet-backend.alephium.org/docs/index.html?url=/docs/explorer-backend-openapi.json">Mainnet Backend API</a>
 

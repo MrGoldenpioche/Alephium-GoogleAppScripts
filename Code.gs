@@ -1,6 +1,7 @@
 const BASE_URL = "https://mainnet-backend.alephium.org/addresses/";
+const ALPH_UNIT = Math.pow(10, 18);
 
-//Enter your Alephium' wallet address here
+//Enter your wallet address here
 var wallet_address = "14kXEBykCLgMQr7PV94v4ygtHuPRmFtMvyc42DcDjA5Cu";
 
 function ALPH_makeHttpRequest() {
@@ -18,13 +19,13 @@ function ALPH_getTotalAlph() {
 
   Logger.log(total_alph);
 
-  return total_alph/Math.pow(10, 18);
+  return total_alph/ALPH_UNIT;
 }
 
 function ALPH_getTotalTransaction() {
 
   var response = ALPH_makeHttpRequest();
-  var total_tx = parseInt(JSON.parse(response.getContentText()).txNumber,10);
+  var total_tx = JSON.parse(response.getContentText()).txNumber;
 
   Logger.log(total_tx);
 
