@@ -16,8 +16,12 @@ This core function make HTTP Get request to mainet backend of Alephium against a
 This function first call **ALPH_makeHttpRequest()** and return the total number of ALPH token for the specified wallet.
 **Important** : this function returns the raw number of ALPH. You must divide it by 1000000000000000000 in GoogleSheet. 
 
+<img src="./ressources/totalAlph.png" >
+
 ### ALPH_getTotalTransaction()
-This function first call **ALPH_makeHttpRequest()** and return the total number of transaction for the specified wallet
+This function first call **ALPH_makeHttpRequest()** and return the total number of transaction for the specified wallet.
+
+<img src="./ressources/totalTX.png" >
 
 ### ALPH_getCurrentTokenPrice()
 Not available for the moment. Waiting on listing on Exchange
