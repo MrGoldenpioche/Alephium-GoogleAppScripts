@@ -19,6 +19,9 @@ This function first call **ALPH_makeHttpRequest()** and return the total number 
 ### ALPH_getTotalTransaction()
 This function first call **ALPH_makeHttpRequest()** and return the total number of transaction for the specified wallet
 
+### ALPH_getCurrentTokenPrice()
+Not available for the moment. Waiting on listing on Exchange
+
 ## How to use them
 Go to https://script.google.com/ and create a new project named **Alephium**. 
 This will automatically create a file named **code.gs**. Open it and past the functions you want in it.
