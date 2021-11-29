@@ -7,6 +7,8 @@ To use these functions, two variables are set.
 > - BASE_URL : fixed to "https://mainnet-backend.alephium.org/addresses/"
 > - WALLET_ADDRESS : add your Alephium's wallet address here
 
+If you don't want details, jump to <a href="https://github.com/MrGoldenpioche/Alephium-GoogleAppScripts#how-to-use-them">How to use this ?</a>
+
 ## Available functions
 
 ### ALPH_makeHttpRequest()
@@ -14,9 +16,10 @@ This core function make HTTP Get request to mainet backend of Alephium against a
 
 ### ALPH_getTotalAlph()
 This function first call **ALPH_makeHttpRequest()** and return the total number of ALPH token for the specified wallet.
-**Important** : this function returns the raw number of ALPH. You must divide it by 1000000000000000000 in GoogleSheet. 
 
 <center><img src="./ressources/totalAlph.png" ></center>
+
+**Important** : this function returns the raw number of ALPH. You must divide it by 1000000000000000000 in GoogleSheet. 
 
 ### ALPH_getTotalTransaction()
 This function first call **ALPH_makeHttpRequest()** and return the total number of transaction for the specified wallet.
@@ -46,6 +49,5 @@ Don't forget to update the variable **WALLET_ADDRESS** and then run the desired 
 <center><img src="./ressources/step3.png" ></center>
 
 ### Step 4 - Save project and call functions into GoogleSheet
-
 Look examples above. 
 
