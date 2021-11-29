@@ -29,7 +29,7 @@ This function first call **ALPH_makeHttpRequest()** and return the total number 
 ### ALPH_getCurrentTokenPrice()
 Not available for the moment. Waiting on listing on Exchange
 
-## How to use them
+## How to use ?
 Go to https://script.google.com/ and create a new project named **Alephium**. 
 This will automatically create a file named **code.gs**. Open it and past the functions you want in it.
 Once done, you can simply save your project and run the code to be sure that all data are retrieved correctly 
