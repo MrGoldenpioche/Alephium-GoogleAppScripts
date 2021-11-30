@@ -54,7 +54,7 @@ Return the percentage of circulating ALPH based on the current HARD CAP.
 
 ## How to use ?
 Go to https://script.google.com/ and create a new project named **Alephium**. 
-This will automatically create a file named **code.gs**. Open it and past the functions you want in it.
+This will automatically create a file named **code.gs**. Open it and past the content of <a href="https://github.com/MrGoldenpioche/Alephium-GoogleAppScripts/blob/main/Code.gs">this file</a>.
 Once done, you can simply save your project and run the code to be sure that all data are retrieved correctly 
 If all is working as expected, you can call these functions into GoogleSheet :-)
 
