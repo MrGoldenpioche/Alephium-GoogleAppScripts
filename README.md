@@ -35,14 +35,22 @@ Waiting on listing on Exchange.
 ### ALPH_getTotalCirculatingSupply()
 Return the number of ALPH already circulating.
 
+<center><img src="./ressources/getTotCirculatingSupply.png" ></center>
+
 ### ALPH_getTotalSupplySoftCap()
 Return the current softcap. Even if this value is hardcoded into **TOKEN_SOFTCAP**, it could change in the futur. 
+
+<center><img src="./ressources/getTotSupplySoftCap.png" ></center>
 
 ### ALPH_getTotalCirculatingSupplySoftCapPercentage()
 Return the percentage of circulating ALPH based on the current SOFT CAP. 
 
+<center><img src="./ressources/getTotSupplySoftCapPercent.png" ></center>
+
 ### ALPH_getTotalCirculatingSupplyHardCapPercentage()
 Return the percentage of circulating ALPH based on the current HARD CAP. 
+
+<center><img src="./ressources/getTotSupplyHardCapPercent.png" ></center>
 
 ## How to use ?
 Go to https://script.google.com/ and create a new project named **Alephium**. 
