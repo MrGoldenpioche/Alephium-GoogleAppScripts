@@ -3,9 +3,12 @@ Fun script to use with Google Sheet to query funny and interesting things on Ale
 This repository contains basic Google AppScripts that can be used in your GoogleSheet. All these scripts are related to Alephium project. Below you can find basic explaination about how to use these scripts
 
 ### Constant variables
-To use these functions, two variables are set.
+To use these functions, some variables are set.
 > - BASE_URL : fixed to "https://mainnet-backend.alephium.org/addresses/"
 > - ALPH_UNIT : fixed to 10^18
+> - UNIT_BASE : fixed to 10 (base 10)
+> - TOKEN_HARDCAP : fixed to 1000000000 (one billion)
+> - TOKEN_SOFTCAP : fixed to 140000000 (140 million or 14% of hardcap)
 > - wallet_address : add your Alephium's wallet address here
 
 If you don't want details, jump to <a href="https://github.com/MrGoldenpioche/Alephium-GoogleAppScripts#how-to-use-them">How to use this ?</a>
@@ -20,10 +23,6 @@ This function first call **ALPH_makeHttpRequest()** and return the total number 
 
 <center><img src="./ressources/totalAlph.png" ></center>
 
-### ALPH_getTotalAlph2(wallet array)
-Not available for the moment.
-Must be implemented.
-
 ### ALPH_getTotalTransaction()
 This function first call **ALPH_makeHttpRequest()** and return the total number of transaction for the specified wallet.
 
@@ -34,8 +33,16 @@ Not available for the moment.
 Waiting on listing on Exchange.
 
 ### ALPH_getTotalCirculatingSupply()
-Not available for the moment. 
-Must be implemented.
+Return the number of ALPH already circulating.
+
+### ALPH_getTotalSupplySoftCap()
+Return the current softcap. Even if this value is hardcoded into **TOKEN_SOFTCAP**, it could change in the futur. 
+
+### ALPH_getTotalCirculatingSupplySoftCapPercentage()
+Return the percentage of circulating ALPH based on the current SOFT CAP. 
+
+### ALPH_getTotalCirculatingSupplyHardCapPercentage()
+Return the percentage of circulating ALPH based on the current HARD CAP. 
 
 ## How to use ?
 Go to https://script.google.com/ and create a new project named **Alephium**. 
@@ -61,4 +68,3 @@ Look examples above.
 
 ## References
 > - <a href="https://mainnet-backend.alephium.org/docs/index.html?url=/docs/explorer-backend-openapi.json">Mainnet Backend API</a>
-
