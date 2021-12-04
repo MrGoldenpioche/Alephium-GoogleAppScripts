@@ -9,7 +9,7 @@ const CMC_TOKEN = "ALPH";
 var wallet_address = "1DxSgjSjsweEoyiykwnWARhws9f26TZLfGXRevLx44NXw";
 
 //Enter your CoinMarketCap API key here => https://pro.coinmarketcap.com/signup/
-var cmc_api_key = "876631df-bae8-4b55-bc71-7ab92ff63f96";
+var cmc_api_key = "add your key";
 
 //switch to make your code more verbose
 var isDebug = true;
