@@ -29,8 +29,12 @@ This function first call **ALPH_makeHttpRequest()** and return the total number 
 <center><img src="./ressources/totalTX.png" ></center>
 
 ### ALPH_getCurrentTokenPrice()
-Not available for the moment. 
-Waiting on listing on Exchange.
+This function will get current token price on CMC (CoinMarketCap.com). 
+You have to specify you CMC API key first in the code. 
+
+<center><img src="./ressources/GetCurrentTokenPrice.png" ></center>
+
+**Note** : value of 0.168 is hardcoded and returned while Alephium token price is not available on CMC. Once the price will be available on CMC, this script automatically returns the CMC's price.
 
 ### ALPH_getTotalCirculatingSupply()
 Return the number of ALPH already circulating.
